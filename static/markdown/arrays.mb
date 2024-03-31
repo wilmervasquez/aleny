@@ -1,0 +1,186 @@
+T1: Metodos del Objeto Array 👇
+#Img: https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1iUPq59ofOZSvswEyZyeFq%2F2d2a1c67a4e1d559700c664d6e483f01%2Fimage_38__1_.png&w=1200&q=75&dpl=dpl_B8T3tErnebJH489vvvd7ADupNPaS
+P: (Blocks don't have to wrap elements, they can also wrap text within elements!)
+T2: 🧊 .at()
+P: Eta propiedad sirve para obtener un elemnto pasandole el parametro como indice del array ,la ventaja es que si le pasamos un numero negativo empieza de atras
+Code:javascript
+  const paises = ["peru","brasil","chile"]
+  paises.at(-1) // "chile"
+  
+
+
+T2: 🧊 .concat()
+Code:javascript
+  let amigos = ["peru","brasil","chile"]
+ +let otrosAmigos = ["peru","brasil","chile"]
+  let todos = amigos.contcat(otrosamigos)
+ -console.log(todos) // ["peru","brasil","chile"]
+  
+![WARNING] Modifica el array original
+  
+
+![NOTE] Tomar en consideracion
+T2: 🧊 .copyWithin()
+T2: 🧊 .entries()
+P: El método `entries()` en JavaScript es una función de los objetos de tipo Array que devuelve un nuevo objeto de tipo Iterator, el cual contiene pares clave/valor para cada elemento en el array. Cada par consiste en un índice (clave) y el valor correspondiente en ese índice del array.
+P: Aquí tienes un ejemplo de cómo usar el método entries():
+Code:javascript
+  // Definir un array
+  let frutas = ['manzana', 'plátano', 'uva'];
+  var name = `vbbbbbb\`b ${frutas.planet(`loop${null}`)}`
+  export let fileName: string | null = null;
+  export let text: string = "";
+  
+  import { codeToHast, codeToHtml, codeToThemedTokens } from 'shikiji';
+
+  (async()=>{
+    // console.clear()
+    console.log(text)
+
+    console.log(await codeToThemedTokens(text, {lang: 'javascript',theme: 'dracula'}))
+  })();
+  // Obtener un iterador usando entries()
+  let iterador = frutas.entries();
+
+  // Iterar a través del iterador y mostrar cada par clave/valor
+  for (let entrada of iterador) {
+    console.log(entrada);
+  }
+
+  // Resultado esperado:
+  // [0, 'manzana']
+  // [1, 'plátano']
+  // [2, 'uva']
+
+P: En este ejemplo, el método entries() se utiliza para obtener un iterador sobre el array de frutas. Luego, se utiliza un bucle for...of para iterar sobre el iterador y mostrar cada par clave/valor, donde la clave es el índice y el valor es el elemento correspondiente del array. En este caso, se imprimirá cada índice y la fruta asociada en el array.
+T2: 🧊 .every()
+T2: 🧊 .fill()
+P: Rellenar con un elemento dado y posicion
+Code:javascript
+  const array = [1,2,3,4,5,6,7,8]
+  array.fill(item,1,4) // [1,1,1,1,5,6,7,8]
+![WARNING] Modifica el array orginal
+T2: 🧊 .filter()
+T2: 🧊 .find()
+T2: 🧊 .findIndex()
+T2: 🧊 .findLast()
+T2: 🧊 .findLastIndex()
+T2: 🧊 .flat()
+T2: 🧊 .flatMap()
+T2: 🧊 .forEach()
+T2: 🧊 .includes()
+T2: 🧊 .indexOf()
+T2: 🧊 .join()
+T2: 🧊 .keys()
+T2: 🧊 .lastIndexOf()
+T2: 🧊 .map()
+T2: 🧊 .pop()
+T2: 🧊 .push()
+T2: 🧊 .reduce()
+T2: 🧊 .reduceRight()
+T2: 🧊 .reverse()
+T2: 🧊 .shift()
+T2: 🧊 .slice()
+T2: 🧊 .some()
+T2: 🧊 .sort()
+T2: 🧊 .splice()
+T2: 🧊 .toLocaleString()
+T2: 🧊 .toReversed()
+T2: 🧊 .toSorted()
+T2: 🧊 .toSpliced()
+T2: 🧊 .toString()
+Code:javascript
+  [2,3,4,5].toString() // "1,2,3,4,5,6"
+![NOTE] No muta Crossorgin
+T2: 🧊 .unshift()
+T2: 🧊 .values()
+T2: 🧊 .with()
+[CAUTION] Esta en desuso por la falta de integracon
+T1: Hi 🖐️ guide to open source for the social sector
+P: JavaScript can access an existing selection, select/deselect DOM nodes as a whole or partially, remove the selected content from the document, wrap it into a tag, and so on.
+GitHub: sveltejavascript/svelte
+T2: 📁 El repositorio de Typescript
+Img: https://pbs.twimg.com/card_img/1748762630284595200/lVJtyMz-?format=jpg&name=large
+T2: Todos los Metodos del Array
+T3: 🧩 Extensiones
+[NOTE] Tambien hay que tomas en cuenta que la vida es asombro para nosotros por eso hay que tener en consideracion
+Img: https://ishadeed.com/assets/query-units/intro.jpg
+P: ✅❌📌🧩📔📒📕📗📘📙📁📒📎📚
+T2: ✅ Buenas Pacticas
+  
+T2: ❌ Malas Practicas
+
+T3: Todos los Metodos del Array
+T4: Todos los Metodos del Array
+T5: Todos los Metodos del Array
+T6: Todos los Metodos del Array
+P: Calling all nonprofits! Do you want to implement open source software but don’t know where to start? We’ve got good news; you can easily get started by consulting our new guide.
+T2: .at(indice: number)
+P: El at es para obntener el elemento segun le idiquemos de indice, pero si usamos un negativo empezara de atras
+Code:javascript
+  let ftutas = ["pera","planaos","uva"]
+  frutas.at(1) // planaos
+  frutas.at(-1) // uva
+T2: 🧊 .map()
+P: En JavaScript, el método map() es una función de los arrays que se utiliza para transformar cada elemento de un array según una función dada, generando un nuevo array con los resultados de aplicar la función a cada elemento original. Este método no modifica el array original, sino que crea y devuelve un nuevo array con los resultados.
+P: La sintaxis básica del método map() es la siguiente:
+Code:javascript
+  const newArray = arrayOriginal.map(function(element, index, array) {
+    // código de transformación
+    return nuevoElemento;
+  });
+
+T2: 🧊 .filter()
+T2: 🧊 .reduce()
+P: Para compartir a otros dispositivos
+$ npm run dev -- --host
+T2: .lastIndex()
+$ npm install
+$ cd app
+P: JavaScript can access an existing selection, select/deselect DOM nodes as a whole or partially, remove the selected content from the document, wrap it into a tag, and so on.
+P: You can find some recipes for common tasks at the end of the chapter, in “Summary” section. Maybe that covers your current needs, but you’ll get much more if you read the whole text.
+P: The underlying Range and Selection objects are easy to grasp, and then you’ll need no recipes to make them do what you want.
+[IMPORTANT] Magnifico
+[CAUTION] Magnifico
+[NOTE] Magnifico
+[TIP] Magnifico
+[WARNING] Magnifico
+
+T2: Range
+P: The basic concept of selection is Range, that is essentially a pair of “boundary points”: range start and range end.
+P: A Range object is created without parameters:
+
+Code:javascript
+  let range = new Range();
+T3: Planet
+@widget 
+
+P: Mire las siguientes imagenes
+Img: https://s3-alpha.figma.com/hub/file/3540086946/966b4238-c04e-44be-af42-107407863c65-cover.png
+P: loook
+  
+Code:javascript
+ +function manierfd(name, number, search){
+ +  console.log()
+    for(){
+      while(wer ==   buld){
+        n
+      }
+    }
+  }
+  
+  const bilds
+$ npm run dev -D -- --open
+Code:css
+  .caret:bin{
+    cursor: pointer;
+    content: attr(data-url);
+    color: #fff;
+  }
+[NOTE] file
+
+#Img: https://www.svgrepo.com/show/530483/subscription.svg
+
+P: Para empezar el mundo es grande
+
+Succel(lang: .javascript):
