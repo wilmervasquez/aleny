@@ -1,16 +1,10 @@
 (function () {
 	function getThemeUser() {
-		if (localStorage.theme === 'light') {
-			return 'light';
-		}
-		if (localStorage.theme === 'dark') {
-			return 'dark';
-		}
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			return 'dark';
-		} else {
-			return 'light';
-		}
+		if (localStorage.theme === 'light')	return 'light';
+		if (localStorage.theme === 'dark') return 'dark';
+
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+		else return 'light';
 	}
 
 	const themeUser = getThemeUser();
@@ -19,3 +13,6 @@
 		localStorage.setItem('theme', 'dark');
 	}
 })();
+
+
+

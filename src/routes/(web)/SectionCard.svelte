@@ -4,7 +4,7 @@
   export let sites: CardTarget[] = [];
   export let name: string = "";
   let state:"load"|"loading"|"error" = "load";
-  sites.sort(()=>Math.random()-0.5)
+  sites.sort(() => Math.random() - 0.5 )
   sites = sites.slice(0,8);
 </script>
 <section class="flex flex-col p-4 gap-4 pt-8">

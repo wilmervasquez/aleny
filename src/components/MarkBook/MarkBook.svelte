@@ -24,8 +24,10 @@
 
 </script>
 
-<div class="document flex flex-col gap-3 p-5 w-full max-w-3xl overflow-y-scroll" data-theme="app.background">
-	<!-- <SetTheme /> -->
+<div class="document flex flex-col gap-3 p-5 print:p-0 w-full max-w-3xl overflow-y-scroll">
+	<SetTheme />
+
+	
 	<!-- <GitHubRespositories/> -->
 	<!-- <Canvas /> -->
 	<!-- <Root/> -->
@@ -50,6 +52,10 @@
 		{/if}
 	{/each}
 </div>
-
 <style>
+	.cont{
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+	}
+
 </style>

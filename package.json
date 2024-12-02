@@ -43,6 +43,7 @@
 		"@supabase/supabase-js": "^2.39.1",
 		"@wkit/svelte-ui": "file:../../@npm/@wkit/svelte-ui",
 		"@wkit/use-action": "file:../../@npm/@wkit/use-action",
+		"@wvkit/doc": "^0.0.2",
 		"axios": "^1.6.3",
 		"duokit": "^0.0.7",
 		"html2canvas": "^1.4.1"

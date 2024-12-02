@@ -92,10 +92,10 @@
 			</div>
 		</div>
 	</section>
-	<SectionCard name="Populares" sites={data.webLinks} />
+	<!-- <SectionCard name="Populares" sites={data.webLinks} />
 	<SectionCard name="UX Tools" sites={data.webLinks} />
 	<SectionCard name="UI Design" sites={data.webLinks} />
-	<SectionCard name="IDE" sites={data.webLinks} />
+	<SectionCard name="IDE" sites={data.webLinks} /> -->
 </div>
 
 <style>

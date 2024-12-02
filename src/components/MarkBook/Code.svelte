@@ -1,7 +1,7 @@
 <script lang="ts">
   export let fileName: string | null = null;
   export let text: string = "";
-  import { codeToHtml } from 'shikiji'
+  import { codeToHtml } from 'shiki'
 
 const html = await codeToHtml(text, {
   lang: 'javascript',

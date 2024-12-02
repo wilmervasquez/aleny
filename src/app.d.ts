@@ -13,9 +13,9 @@ declare global {
 	}
 	
 	namespace svelteHTML {
-		interface HTMLAttributes<T extends EventTarget> {
-			'on:clickOutside'?: MouseEventHandler<T> | undefined | null;
-		}
+		// interface HTMLAttributes<T extends EventTarget> {
+		// 	'on:clickOutside'?: MouseEventHandler<T> | undefined | null;
+		// }
 	}
 }
 

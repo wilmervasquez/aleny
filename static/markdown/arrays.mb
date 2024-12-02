@@ -1,27 +1,41 @@
 T1: Metodos del Objeto Array 👇
 #Img: https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1iUPq59ofOZSvswEyZyeFq%2F2d2a1c67a4e1d559700c664d6e483f01%2Fimage_38__1_.png&w=1200&q=75&dpl=dpl_B8T3tErnebJH489vvvd7ADupNPaS
 P: (Blocks don't have to wrap elements, they can also wrap text within elements!)
-T2: 🧊 .at()
-P: Eta propiedad sirve para obtener un elemnto pasandole el parametro como indice del array ,la ventaja es que si le pasamos un numero negativo empieza de atras
+T3: 🧊 .at()
+P: El método `at()` recibe un valor numérico entero y devuelve el elemento en esa posición, permitiendo valores positivos y negativos. Los valores negativos contarán desde el último elemento del array.
 Code:javascript
   const paises = ["peru","brasil","chile"]
   paises.at(-1) // "chile"
   
 
 
-T2: 🧊 .concat()
+T3: 🧊 .concat()
+P: El método concat() se usa para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array.
 Code:javascript
   let amigos = ["peru","brasil","chile"]
  +let otrosAmigos = ["peru","brasil","chile"]
   let todos = amigos.contcat(otrosamigos)
- -console.log(todos) // ["peru","brasil","chile"]
+  console.log(todos) // ["peru","brasil","chile"]
   
 ![WARNING] Modifica el array original
-  
-
+P: Sus capacidaes de percebir el momento es increible las entidades en la sirugia y rotoplania y enfoque servindert
 ![NOTE] Tomar en consideracion
-T2: 🧊 .copyWithin()
-T2: 🧊 .entries()
+
+
+T3: 🧊 .copyWithin()
+P: El método `copyWithin()` transfiere una copia plana de una sección a otra dentro del mismo array ( o contexto similar ), sin modificar su propiedad length y lo devuelve.
+Code:javascript
+  const array1 = ['a', 'b', 'c', 'd', 'e'];
+
+  // Copy to index 0 the element at index 3
+  console.log(array1.copyWithin(0, 3, 4));
+  // Expected output: Array ["d", "b", "c", "d", "e"]
+
+  // Copy to index 1 all elements from index 3 to the end
+  console.log(array1.copyWithin(1, 3));
+  // Expected output: Array ["d", "d", "e", "d", "e"]
+
+T3: 🧊 .entries()
 P: El método `entries()` en JavaScript es una función de los objetos de tipo Array que devuelve un nuevo objeto de tipo Iterator, el cual contiene pares clave/valor para cada elemento en el array. Cada par consiste en un índice (clave) y el valor correspondiente en ese índice del array.
 P: Aquí tienes un ejemplo de cómo usar el método entries():
 Code:javascript
@@ -33,95 +47,84 @@ Code:javascript
   
   import { codeToHast, codeToHtml, codeToThemedTokens } from 'shikiji';
 
-  (async()=>{
-    // console.clear()
-    console.log(text)
-
-    console.log(await codeToThemedTokens(text, {lang: 'javascript',theme: 'dracula'}))
-  })();
-  // Obtener un iterador usando entries()
-  let iterador = frutas.entries();
-
-  // Iterar a través del iterador y mostrar cada par clave/valor
-  for (let entrada of iterador) {
-    console.log(entrada);
-  }
-
-  // Resultado esperado:
-  // [0, 'manzana']
-  // [1, 'plátano']
-  // [2, 'uva']
 
 P: En este ejemplo, el método entries() se utiliza para obtener un iterador sobre el array de frutas. Luego, se utiliza un bucle for...of para iterar sobre el iterador y mostrar cada par clave/valor, donde la clave es el índice y el valor es el elemento correspondiente del array. En este caso, se imprimirá cada índice y la fruta asociada en el array.
-T2: 🧊 .every()
-T2: 🧊 .fill()
+T3: 🧊 .every()
+P: Determina si todos los elementos en el array satisfacen una condición.
+Code:javascript
+  const array1 = [1, 30, 39, 29, 10, 13];
+  array1.every((currentValue) => currentValue < 40); // true
+
+T3: 🧊 .fill()
 P: Rellenar con un elemento dado y posicion
 Code:javascript
   const array = [1,2,3,4,5,6,7,8]
   array.fill(item,1,4) // [1,1,1,1,5,6,7,8]
 ![WARNING] Modifica el array orginal
-T2: 🧊 .filter()
-T2: 🧊 .find()
-T2: 🧊 .findIndex()
-T2: 🧊 .findLast()
-T2: 🧊 .findLastIndex()
-T2: 🧊 .flat()
-T2: 🧊 .flatMap()
-T2: 🧊 .forEach()
-T2: 🧊 .includes()
-T2: 🧊 .indexOf()
-T2: 🧊 .join()
-T2: 🧊 .keys()
-T2: 🧊 .lastIndexOf()
-T2: 🧊 .map()
-T2: 🧊 .pop()
-T2: 🧊 .push()
-T2: 🧊 .reduce()
-T2: 🧊 .reduceRight()
-T2: 🧊 .reverse()
-T2: 🧊 .shift()
-T2: 🧊 .slice()
-T2: 🧊 .some()
-T2: 🧊 .sort()
-T2: 🧊 .splice()
-T2: 🧊 .toLocaleString()
-T2: 🧊 .toReversed()
-T2: 🧊 .toSorted()
-T2: 🧊 .toSpliced()
-T2: 🧊 .toString()
+T3: 🧊 .filter()
+T3: 🧊 .find()
+T3: 🧊 .findIndex()
+T3: 🧊 .findLast()
+T3: 🧊 .findLastIndex()
+T3: 🧊 .flat()
+P: Machacar un array
+Code:javascript
+  ['a', 'b', 'c'].flat() 
+T3: 🧊 .flatMap()
+T3: 🧊 .forEach()
+T3: 🧊 .includes()
+T3: 🧊 .indexOf()
+P: Encontrar el indice del primer elemento qu este se encuentre de acuerdo pasado el parametro
+Code:javascript
+  ['a', 'b', 'c'].indexOf('b') 
+  // Output: 1
+T3: 🧊 .join()
+P: Convertir un array a string
+Code:javascript
+  ['a', 'b', 'c'].join() // a, c, d
+P: Acepta un argumento se string que sera el separado, por defecto separa por una ","
+Code:javascript
+  ['a', 'b', 'c'].join('-') // a-c-d
+
+T3: 🧊 .keys()
+T3: 🧊 .lastIndexOf()
+T3: 🧊 .map()
+T3: 🧊 .pop()
+T3: 🧊 .push()
+T3: 🧊 .reduce()
+T3: 🧊 .reduceRight()
+T3: 🧊 .reverse()
+T3: 🧊 .shift()
+T3: 🧊 .slice()
+T3: 🧊 .some()
+T3: 🧊 .sort()
+T3: 🧊 .splice()
+T3: 🧊 .toLocaleString()
+T3: 🧊 .toReversed()
+T3: 🧊 .toSorted()
+T3: 🧊 .toSpliced()
+T3: 🧊 .toString()
 Code:javascript
   [2,3,4,5].toString() // "1,2,3,4,5,6"
 ![NOTE] No muta Crossorgin
-T2: 🧊 .unshift()
-T2: 🧊 .values()
-T2: 🧊 .with()
+T3: 🧊 .unshift()
+T3: 🧊 .values()
+T3: 🧊 .with()
 [CAUTION] Esta en desuso por la falta de integracon
 T1: Hi 🖐️ guide to open source for the social sector
 P: JavaScript can access an existing selection, select/deselect DOM nodes as a whole or partially, remove the selected content from the document, wrap it into a tag, and so on.
-GitHub: sveltejavascript/svelte
-T2: 📁 El repositorio de Typescript
-Img: https://pbs.twimg.com/card_img/1748762630284595200/lVJtyMz-?format=jpg&name=large
-T2: Todos los Metodos del Array
-T3: 🧩 Extensiones
+
 [NOTE] Tambien hay que tomas en cuenta que la vida es asombro para nosotros por eso hay que tener en consideracion
 Img: https://ishadeed.com/assets/query-units/intro.jpg
-P: ✅❌📌🧩📔📒📕📗📘📙📁📒📎📚
-T2: ✅ Buenas Pacticas
-  
-T2: ❌ Malas Practicas
 
-T3: Todos los Metodos del Array
-T4: Todos los Metodos del Array
-T5: Todos los Metodos del Array
-T6: Todos los Metodos del Array
 P: Calling all nonprofits! Do you want to implement open source software but don’t know where to start? We’ve got good news; you can easily get started by consulting our new guide.
-T2: .at(indice: number)
+T3: .at(indice: number)
 P: El at es para obntener el elemento segun le idiquemos de indice, pero si usamos un negativo empezara de atras
 Code:javascript
   let ftutas = ["pera","planaos","uva"]
   frutas.at(1) // planaos
   frutas.at(-1) // uva
-T2: 🧊 .map()
+T3: 🧊 .map()
 P: En JavaScript, el método map() es una función de los arrays que se utiliza para transformar cada elemento de un array según una función dada, generando un nuevo array con los resultados de aplicar la función a cada elemento original. Este método no modifica el array original, sino que crea y devuelve un nuevo array con los resultados.
 P: La sintaxis básica del método map() es la siguiente:
 Code:javascript
@@ -130,11 +133,11 @@ Code:javascript
     return nuevoElemento;
   });
 
-T2: 🧊 .filter()
-T2: 🧊 .reduce()
+T3: 🧊 .filter()
+T3: 🧊 .reduce()
 P: Para compartir a otros dispositivos
 $ npm run dev -- --host
-T2: .lastIndex()
+T3: .lastIndex()
 $ npm install
 $ cd app
 P: JavaScript can access an existing selection, select/deselect DOM nodes as a whole or partially, remove the selected content from the document, wrap it into a tag, and so on.
@@ -146,7 +149,7 @@ P: The underlying Range and Selection objects are easy to grasp, and then you’
 [TIP] Magnifico
 [WARNING] Magnifico
 
-T2: Range
+T3: Range
 P: The basic concept of selection is Range, that is essentially a pair of “boundary points”: range start and range end.
 P: A Range object is created without parameters:
 

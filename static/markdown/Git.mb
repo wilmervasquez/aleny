@@ -1,0 +1,51 @@
+T1: ⚡ Git Command basic
+P: ✨ Iniciar un repositorio local
+$ git init
+
+P: 🔸 Clonar un repositorio
+$ git clone <url>
+
+P: 🛡️ Inicializa un nuevo repositorio Git en el directorio actual.
+$ git init
+
+P: ⚡ Clona un repositorio existente desde una URL remota hacia tu máquina local.
+$ git clone [URL]
+
+P: 🛠️ Añade un archivo al área de preparación (staging area) para ser incluido en el próximo commit. También puedes usar git add . para añadir todos los cambios.
+$ git add [archivo]
+
+P: Confirma los cambios añadidos al área de preparación con un mensaje descriptivo.
+$ git commit -m "mensaje"
+
+P: Muestra el estado actual del directorio de trabajo y del área de preparación.
+$ git status
+
+P: Sube los commits locales al repositorio remoto.
+$ git push
+
+P: Obtiene cambios desde el repositorio remoto y los fusiona en tu rama local.
+$ git pull
+
+P: Lista todas las ramas locales en el repositorio. También puedes crear una nueva rama usando git branch [nombre_rama].
+$ git branch
+
+P: Cambia a una rama existente o a un commit específico.
+$ git checkout [nombre_rama o hash_commit]
+
+P: Fusiona los cambios de una rama específica en la rama actual.
+$ git merge [nombre_rama]
+
+P: Lista todos los repositorios remotos asociados con el repositorio actual. También puedes añadir un nuevo repositorio remoto usando git remote add [nombre] [URL].
+$ git remote
+
+P: Muestra un registro de los commits en el repositorio.
+$ git log
+
+P: Muestra las diferencias entre el directorio de trabajo y el área de preparación.
+$ git diff
+
+P: Elimina un archivo del área de preparación, pero conserva sus cambios en el directorio de trabajo.
+$ git reset [archivo]
+
+P: Elimina un archivo del directorio de trabajo y del área de preparación.
+$ git rm [archivo]

@@ -15,7 +15,7 @@
 <div class="card flex gap-3 items-center p-1  rounded-xl" style:background=".{color[name][0]}10">
 
   
-  <p class=" text-[hsl(212,8%,67%)]" >
+  <p class=" text-[#656D76] font-sans font-medium" >
     <svg class="inline align-middle" width="1em" height="1em">
       <use href="{citaPackSvg}#{name}" fill={color[name][0]}/>
     </svg>&nbsp;

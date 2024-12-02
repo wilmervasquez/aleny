@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { detectClickOutside } from "@wkit/use-action";
+	import { clickOutside } from "@wvkit/doc";
   let categoriesVisible = false;
   
   function clickOutsideElement() {
@@ -12,7 +12,7 @@
     <p class="hidden sm:block">All</p>
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path class="fill-content-500" fill-rule="evenodd" d="M4.43 8.512a.75.75 0 0 1 1.058-.081L12 14.012l6.512-5.581a.75.75 0 0 1 .976 1.138l-7 6a.75.75 0 0 1-.976 0l-7-6a.75.75 0 0 1-.081-1.057" clip-rule="evenodd"/></svg>
     <!-- categories -->
-    <div class="categories absolute top-14 left-0 bg-content-50 dark:bg-content-900" use:detectClickOutside on:clickOutside={clickOutsideElement}>
+    <div class="categories absolute top-14 left-0 bg-content-50 dark:bg-content-900" use:clickOutside={clickOutsideElement}>
       <div class="cat" class:hidden={!categoriesVisible}>
         {#each new Array(10) as _}
           <div class="px-4 py-1" >Microsoft&nbsp;System</div>
