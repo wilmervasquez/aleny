@@ -47,7 +47,7 @@
         <code class="text-sm overflow-x-scroll grid grid-cols-1 pb-1 text-[#F8F8F2]">
           {#each code as line,i}
             <div>
-              {#each line as {content,color = ""}}
+              {#each line as {content, color = ""}}
                 {@const {h,s,l} = hexToHSL(color)}
                 <span class="inline" style:color="hsl({h},{s}%,{l}%)">{@html content.replaceAll(" ","&nbsp")}</span>
               {:else}
